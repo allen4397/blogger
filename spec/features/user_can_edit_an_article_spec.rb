@@ -19,6 +19,7 @@ describe "user edits article" do
       expect(current_path).to eq(article_path(article))
       expect(page).to have_content("Better Title!")
       expect(page).to have_content("Better Body!")
+      expect(page).to have_content("Article Your Updated Title was updated.")
 		end
 	end
 end
